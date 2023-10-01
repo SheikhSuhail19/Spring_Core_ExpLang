@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd"
+>
+
+    <bean name="employee1" class="com.springcore.collections.Employee">
+        <property name="name" value="John Locke" />
+
+        <property name="phoneNumbers">
+            <list>
+                <value>1234567890</value>
+                <value>4561237890</value>
+                <value>1567890234</value>
+                <value>6789014523</value>
+                <null/>
+            </list>
+        </property>
+
+        <property name="addresses">
+            <set>
+                <value>New York</value>
+                <value>London</value>
+                <value>Chicago</value>
+            </set>
+        </property>
+
+        <property name="courses">
+            <map>
+                <entry key="Hunting" value="5 days" />
+                <entry key="Communication" value="2 months" />
+                <entry key="Cooking" value="8 months" />
+            </map>
+        </property>
+
+        <property name="props">
+            <props>
+                <prop key="username">root</prop>
+                <prop key="password">password</prop>
+                <prop key="port">8080</prop>
+            </props>
+        </property>
+
+    </bean>
+
+<!-- Collection Type -->
+    <!-- Define a List bean -->
+
+<!--    <bean>-->
+<!--        <property name="">-->
+<!--            <list>-->
+<!--                <value>2</value>-->
+<!--                <value>4</value>-->
+<!--                <value>8</value>-->
+<!--                <value>16</value>-->
+<!--                <value>32</value>-->
+<!--                <value>64</value>-->
+<!--                <null/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+    <!-- Define a Set bean -->
+
+    <!--    <bean>-->
+    <!--        <property name="">-->
+    <!--            <set>-->
+    <!--                <value>2</value>-->
+    <!--                <value>4</value>-->
+    <!--                <value>8</value>-->
+    <!--                <value>16</value>-->
+    <!--                <value>32</value>-->
+    <!--                <value>64</value>-->
+    <!--            </set>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+
+
+    <!-- Define a Map bean -->
+
+    <!--    <bean>-->
+    <!--        <property name="">-->
+    <!--            <map>-->
+<!--                        <entry key="Java" value="3 months"/>-->
+<!--                        <entry key="Python" value="2 months"/>-->
+    <!--            </map>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+
+
+
+    <!-- Define a Properties bean -->
+
+    <!--    <bean>-->
+    <!--        <property name="">-->
+<!--                    <props>-->
+<!--                        <prop key="name">Love Babbar</prop>-->
+<!--                        <prop key="channelName">CodeHelp</prop>-->
+<!--                    </props>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+
+</beans>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd"
+>
+
+<!-- Primitive Type -->
+    <!-- Define the Demo bean -->
+
+    <!-- Using property, value tag -->
+    <bean id="student1" class="com.springcore.primitivetype.Student">
+        <property name="studentId">
+            <value>123</value>
+        </property>
+        <property name="studentName">
+            <value>John Brood</value>
+        </property>
+        <property name="studentAddress">
+            <value>Greater Chicago</value>
+        </property>
+    </bean>
+
+    <!-- Using property tag with value field -->
+    <bean id="student2" class="com.springcore.primitivetype.Student">
+        <property name="studentId" value="321"/>
+        <property name="studentName" value="Tim Classy"/>
+        <property name="studentAddress" value="Paris"/>
+    </bean>
+
+    <!-- Using p-Schema -->
+    <bean id="student3"
+          class="com.springcore.primitivetype.Student"
+          p:studentId="333"
+          p:studentName="Pie Tata"
+          p:studentAddress="West Coast"
+    />
+
+
+<!-- Collection Type -->
+    <!-- Define a List bean -->
+
+<!--    <bean>-->
+<!--        <property name="">-->
+<!--            <list>-->
+<!--                <value>2</value>-->
+<!--                <value>4</value>-->
+<!--                <value>8</value>-->
+<!--                <value>16</value>-->
+<!--                <value>32</value>-->
+<!--                <value>64</value>-->
+<!--                <null/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+    <!-- Define a Set bean -->
+
+    <!--    <bean>-->
+    <!--        <property name="">-->
+    <!--            <set>-->
+    <!--                <value>2</value>-->
+    <!--                <value>4</value>-->
+    <!--                <value>8</value>-->
+    <!--                <value>16</value>-->
+    <!--                <value>32</value>-->
+    <!--                <value>64</value>-->
+    <!--            </set>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+
+
+    <!-- Define a Map bean -->
+
+    <!--    <bean>-->
+    <!--        <property name="">-->
+    <!--            <map>-->
+<!--                        <entry key="Java" value="3 months"/>-->
+<!--                        <entry key="Python" value="2 months"/>-->
+    <!--            </map>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+
+
+
+    <!-- Define a Properties bean -->
+
+    <!--    <bean>-->
+    <!--        <property name="">-->
+<!--                    <props>-->
+<!--                        <prop key="name">Love Babbar</prop>-->
+<!--                        <prop key="channelName">CodeHelp</prop>-->
+<!--                    </props>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+
+<!-- Reference Type -->
+    <!-- Define a Reference bean -->
+
+    <!-- A depends on B -->
+    <!-- So we inject B into A -->
+
+<!--    <bean>-->
+<!--        <property name="">-->
+<!--            <ref bean="B" />-->
+<!--        </property>-->
+<!--    </bean>-->
+
+</beans>
